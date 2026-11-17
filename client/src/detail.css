@@ -1,0 +1,160 @@
+.detail-page {
+  padding-top: 55px;
+  padding-bottom: 100px;
+}
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 35px;
+}
+.detail-layout > img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+.detail-layout h1 {
+  font:
+    500 clamp(42px, 5vw, 64px)/1.1 "Playfair Display",
+    serif;
+  margin: 14px 0;
+}
+.detail-layout > div > p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #716b64;
+  max-width: 440px;
+}
+.detail-layout .detail-note {
+  font-size: 10px;
+  margin-top: 24px;
+}
+.detail-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 28px;
+}
+.button-outline {
+  border-color: #c6a45d;
+  color: #651b32;
+  background: transparent;
+}
+.button-outline:hover {
+  background: #f0e7d7;
+}
+@media (max-width: 700px) {
+  .detail-page {
+    padding-top: 35px;
+    padding-bottom: 75px;
+  }
+  .detail-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 24px;
+  }
+  .detail-layout > img {
+    height: 370px;
+  }
+  .detail-layout h1 {
+    font-size: 45px;
+  }
+  .detail-layout > div > p {
+    font-size: 12px;
+  }
+}
+.food-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.product-image > a {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.product-image > a .food-photo {
+  height: 100%;
+}
+.intro-image > .food-photo {
+  height: 100%;
+}
+.category-card > .food-photo {
+  position: absolute;
+  inset: 0;
+}
+.gift-image > .food-photo {
+  height: 100%;
+}
+.gallery-tile > .food-photo {
+  position: absolute;
+  inset: 0;
+}
+.cart-line > .food-photo {
+  width: 84px;
+  height: 89px;
+  flex: none;
+}
+.detail-photo {
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  position: relative;
+  background: #ebe4d7;
+}
+.detail-photo .food-photo {
+  position: absolute;
+  inset: 0;
+}
+.lightbox > .food-photo {
+  width: min(90vw, 1000px);
+  height: 80vh;
+  object-fit: contain;
+}
+.lightbox > .icon-button {
+  z-index: 2;
+}
+.catalog-notice {
+  margin: 18px 0 24px;
+  padding: 12px 16px;
+  border: 1px solid #dfc98f;
+  background: #f7efdc;
+  color: #5e4d2b;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.catalog-notice::before {
+  content: "PREVIEW MODE — ";
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+@media (max-width: 700px) {
+  .detail-photo {
+    height: 370px;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-cta {
+    display: inline-flex;
+    min-height: 39px;
+    padding: 0 11px;
+  }
+}
+@media (max-width: 700px) {
+  .nav-actions {
+    gap: 9px;
+  }
+  .nav-cta {
+    min-height: 34px;
+    padding: 0 9px;
+    font-size: 8px;
+    gap: 5px;
+  }
+  .nav-cta svg {
+    width: 13px;
+  }
+}
